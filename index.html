@@ -1,6 +1,6 @@
 <!-- Name: Noam Muchnik -->
 <!-- ID: 212472484 -->
-<!-- Github page: https://github.com/Subsidy2032/Web_Developement1-->
+<!-- Github page: https://github.com/Subsidy2032/Web_Developement1 -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -40,11 +40,13 @@
 
             <label for="psw"><b>Password</b></label>
             <input type="password" placeholder="Enter Password" name="psw" id="psw">
+            <!-- Here the message of password is less then 8 characters will display -->
+            <span id = "passMessage"></span>
 
             <label for="psw-repeat"><b>Repeat Password</b></label>
             <input type="password" placeholder="Repeat Password" name="psw-repeat" id="pswRepeat">
-            <!-- Here the message of incorrect password will display -->
-            <span id = "message"></span>
+            <!-- Here the message of passwords not match will display -->
+            <span id = "repeatPassMessage"></span>
 
             <button type="submit" class="signupbtn">Sign Up</button>
         </div>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mitzi-net</title>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <header>
+        <!-- Logo and favicon for the website -->
+        <img src="./Images/favicon.ico" alt="favicon">
+        <h2 id="logo">Mitzi-net</h2>
+    </header>
+
+    <!-- The signup form -->
+    <form name="signupForm" onsubmit="return validateInput()" method="get">
+        <div class="container">
+            <h1>Sign Up</h1>
+            <p>Register to our exclusive club to enjoy all benefits</p>
+            <hr>
+            <!-- Asks to input the full name -->
+            <label for="Full Name"><b>Full Name</b></label>
+            <!-- Box for entering first name -->
+            <input type="text" placeholder="Enter your first name" name="First">
+            <!-- Box for entering last name -->
+            <input type="text" placeholder="Enter your last name" name="Last">
+            
+            <label for="Phone Number"><b>Phone Number</b></label>
+            <input type="text" placeholder="Enter Phone Number" name="Phone Number">
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" placeholder="Enter Email" name="email" id="email">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="psw">
+            <!-- Here the message of password is less then 8 characters will display -->
+            <span id = "passMessage"></span>
+
+            <label for="psw-repeat"><b>Repeat Password</b></label>
+            <input type="password" placeholder="Repeat Password" name="psw-repeat" id="pswRepeat">
+            <!-- Here the message of passwords not match will display -->
+            <span id = "repeatPassMessage"></span>
+
+            <button type="submit" class="signupbtn">Sign Up</button>
+        </div>
+    </form>
+
+</body>
+</html>
